@@ -1,7 +1,3 @@
-'''
-Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número
-primo o no
-'''
 while True: #realiza el bucle cada vez que termine de ejecutarse una opcion
     print("$$$$$$$$ Menu Principal $$$$$$$$")
     print("1. Ejercicio 1: Triangulo")
