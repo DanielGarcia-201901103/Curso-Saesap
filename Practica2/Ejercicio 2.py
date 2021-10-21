@@ -30,13 +30,25 @@ class Producto:
         print('resultado = ',total)
 
 
-print("Ingrese los siguientes datos del producto")
-cod = int(input("codigo: "))
-nom = input("nombre: ")
-prec = float(input("precio: "))
-tip = input("tipo de producto:")
-cantid = int(input("cantidad: "))
+while True:
+    print("------- Menu Principal --------")
+    print("1. Ingresar productos")
+    print("2. Salir")
+    opcion = int(input("Ingrese una opcion: "))  # recibe la opcion ingresada y la guarda como entero
+    print()
+    if opcion == 1:
+        print("Ingrese los siguientes datos del producto")
+        cod = int(input("codigo: "))
+        nom = input("nombre: ")
+        prec = float(input("precio: "))
+        tip = input("tipo de producto:")
+        cantid = int(input("cantidad: "))
 
-product = Producto(cod,nom,prec,tip)
-product.presentacion()
-product.calcular_total(cantid)
+        product = Producto(cod, nom, prec, tip)
+        product.presentacion()
+        product.calcular_total(cantid)
+    elif opcion == 2:
+        break
+    else:
+        print("Ingrese una opcion correcta")
+print()
